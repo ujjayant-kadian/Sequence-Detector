@@ -1,0 +1,414 @@
+
+*** Running vivado
+    with args -log Top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-1460] Use of init.tcl in C:/Users/UjjayantKadian/AppData/Roaming/Xilinx/Vivado/init.tcl is deprecated. Please use Vivado_init.tcl 
+Sourcing tcl script 'C:/Users/UjjayantKadian/AppData/Roaming/Xilinx/Vivado/init.tcl'
+source Top.tcl -notrace
+Command: synth_design -top Top -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 18032 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 548.895 ; gain = 89.379
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Top' [C:/Users/UjjayantKadian/Vivado_Projects/assigment2/assigment2.srcs/sources_1/new/top_module.v:2]
+INFO: [Synth 8-6157] synthesizing module 'clock' [C:/Users/UjjayantKadian/Vivado_Projects/assigment2/assigment2.srcs/sources_1/new/clock.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'clock' (1#1) [C:/Users/UjjayantKadian/Vivado_Projects/assigment2/assigment2.srcs/sources_1/new/clock.v:2]
+INFO: [Synth 8-6157] synthesizing module 'LFSR_21bit' [C:/Users/UjjayantKadian/Vivado_Projects/assigment2/assigment2.srcs/sources_1/new/lfsr_21bit.v:2]
+	Parameter seed bound to: 21'b101001011111000001100 
+INFO: [Synth 8-6155] done synthesizing module 'LFSR_21bit' (2#1) [C:/Users/UjjayantKadian/Vivado_Projects/assigment2/assigment2.srcs/sources_1/new/lfsr_21bit.v:2]
+INFO: [Synth 8-6157] synthesizing module 'FSM' [C:/Users/UjjayantKadian/Vivado_Projects/assigment2/assigment2.srcs/sources_1/new/FSM.v:2]
+	Parameter S0 bound to: 4'b0000 
+	Parameter S1 bound to: 4'b0001 
+	Parameter S2 bound to: 4'b0011 
+	Parameter S3 bound to: 4'b0010 
+	Parameter S4 bound to: 4'b0110 
+	Parameter S5 bound to: 4'b0111 
+	Parameter S6 bound to: 4'b0101 
+	Parameter S7 bound to: 4'b0100 
+	Parameter S8 bound to: 4'b1100 
+	Parameter S9 bound to: 4'b1101 
+	Parameter S10 bound to: 4'b1111 
+WARNING: [Synth 8-6090] variable 'state_next' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/UjjayantKadian/Vivado_Projects/assigment2/assigment2.srcs/sources_1/new/FSM.v:49]
+WARNING: [Synth 8-6090] variable 'state_next' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/UjjayantKadian/Vivado_Projects/assigment2/assigment2.srcs/sources_1/new/FSM.v:51]
+WARNING: [Synth 8-6090] variable 'state_next' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/UjjayantKadian/Vivado_Projects/assigment2/assigment2.srcs/sources_1/new/FSM.v:56]
+WARNING: [Synth 8-6090] variable 'state_next' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/UjjayantKadian/Vivado_Projects/assigment2/assigment2.srcs/sources_1/new/FSM.v:58]
+WARNING: [Synth 8-6090] variable 'state_next' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/UjjayantKadian/Vivado_Projects/assigment2/assigment2.srcs/sources_1/new/FSM.v:63]
+WARNING: [Synth 8-6090] variable 'state_next' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/UjjayantKadian/Vivado_Projects/assigment2/assigment2.srcs/sources_1/new/FSM.v:65]
+WARNING: [Synth 8-6090] variable 'state_next' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/UjjayantKadian/Vivado_Projects/assigment2/assigment2.srcs/sources_1/new/FSM.v:70]
+WARNING: [Synth 8-6090] variable 'state_next' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/UjjayantKadian/Vivado_Projects/assigment2/assigment2.srcs/sources_1/new/FSM.v:72]
+WARNING: [Synth 8-6090] variable 'state_next' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/UjjayantKadian/Vivado_Projects/assigment2/assigment2.srcs/sources_1/new/FSM.v:77]
+WARNING: [Synth 8-6090] variable 'state_next' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/UjjayantKadian/Vivado_Projects/assigment2/assigment2.srcs/sources_1/new/FSM.v:79]
+WARNING: [Synth 8-6090] variable 'state_next' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/UjjayantKadian/Vivado_Projects/assigment2/assigment2.srcs/sources_1/new/FSM.v:84]
+WARNING: [Synth 8-6090] variable 'state_next' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/UjjayantKadian/Vivado_Projects/assigment2/assigment2.srcs/sources_1/new/FSM.v:86]
+WARNING: [Synth 8-6090] variable 'state_next' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/UjjayantKadian/Vivado_Projects/assigment2/assigment2.srcs/sources_1/new/FSM.v:91]
+WARNING: [Synth 8-6090] variable 'state_next' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/UjjayantKadian/Vivado_Projects/assigment2/assigment2.srcs/sources_1/new/FSM.v:93]
+WARNING: [Synth 8-6090] variable 'state_next' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/UjjayantKadian/Vivado_Projects/assigment2/assigment2.srcs/sources_1/new/FSM.v:98]
+WARNING: [Synth 8-6090] variable 'state_next' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/UjjayantKadian/Vivado_Projects/assigment2/assigment2.srcs/sources_1/new/FSM.v:100]
+WARNING: [Synth 8-6090] variable 'state_next' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/UjjayantKadian/Vivado_Projects/assigment2/assigment2.srcs/sources_1/new/FSM.v:105]
+WARNING: [Synth 8-6090] variable 'state_next' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/UjjayantKadian/Vivado_Projects/assigment2/assigment2.srcs/sources_1/new/FSM.v:107]
+WARNING: [Synth 8-6090] variable 'state_next' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/UjjayantKadian/Vivado_Projects/assigment2/assigment2.srcs/sources_1/new/FSM.v:112]
+WARNING: [Synth 8-6090] variable 'state_next' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/UjjayantKadian/Vivado_Projects/assigment2/assigment2.srcs/sources_1/new/FSM.v:114]
+WARNING: [Synth 8-6090] variable 'state_next' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/UjjayantKadian/Vivado_Projects/assigment2/assigment2.srcs/sources_1/new/FSM.v:119]
+WARNING: [Synth 8-6090] variable 'state_next' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/UjjayantKadian/Vivado_Projects/assigment2/assigment2.srcs/sources_1/new/FSM.v:122]
+WARNING: [Synth 8-6090] variable 'temp' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/UjjayantKadian/Vivado_Projects/assigment2/assigment2.srcs/sources_1/new/FSM.v:123]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/UjjayantKadian/Vivado_Projects/assigment2/assigment2.srcs/sources_1/new/FSM.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'FSM' (3#1) [C:/Users/UjjayantKadian/Vivado_Projects/assigment2/assigment2.srcs/sources_1/new/FSM.v:2]
+INFO: [Synth 8-6157] synthesizing module 'counter' [C:/Users/UjjayantKadian/Vivado_Projects/assigment2/assigment2.srcs/sources_1/new/counter.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'counter' (4#1) [C:/Users/UjjayantKadian/Vivado_Projects/assigment2/assigment2.srcs/sources_1/new/counter.v:3]
+INFO: [Synth 8-6157] synthesizing module 'disp_hex_mux' [C:/Users/UjjayantKadian/Vivado_Projects/assigment2/assigment2.srcs/sources_1/new/disp_hex_mux.v:2]
+	Parameter N bound to: 18 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/UjjayantKadian/Vivado_Projects/assigment2/assigment2.srcs/sources_1/new/disp_hex_mux.v:64]
+INFO: [Synth 8-6155] done synthesizing module 'disp_hex_mux' (5#1) [C:/Users/UjjayantKadian/Vivado_Projects/assigment2/assigment2.srcs/sources_1/new/disp_hex_mux.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'Top' (6#1) [C:/Users/UjjayantKadian/Vivado_Projects/assigment2/assigment2.srcs/sources_1/new/top_module.v:2]
+WARNING: [Synth 8-3331] design counter has unconnected port reset
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 605.320 ; gain = 145.805
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 605.320 ; gain = 145.805
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 605.320 ; gain = 145.805
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/UjjayantKadian/Vivado_Projects/assigment2/assigment2.srcs/constrs_1/new/top_constraints.xdc]
+Finished Parsing XDC File [C:/Users/UjjayantKadian/Vivado_Projects/assigment2/assigment2.srcs/constrs_1/new/top_constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/UjjayantKadian/Vivado_Projects/assigment2/assigment2.srcs/constrs_1/new/top_constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 923.645 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 923.645 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 923.645 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 923.645 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 923.645 ; gain = 464.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 923.645 ; gain = 464.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 923.645 ; gain = 464.129
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "max_tick_reg" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'FSM'
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      S0 |                      00000000001 |                             0000
+                      S1 |                      00000000010 |                             0001
+                      S2 |                      00000000100 |                             0011
+                      S3 |                      00000001000 |                             0010
+                      S4 |                      00000010000 |                             0110
+                      S5 |                      00000100000 |                             0111
+                      S6 |                      00001000000 |                             0101
+                      S7 |                      00010000000 |                             0100
+                      S8 |                      00100000000 |                             1100
+                      S9 |                      01000000000 |                             1101
+                     S10 |                      10000000000 |                             1111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'one-hot' in module 'FSM'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 923.645 ; gain = 464.129
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 4     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               21 Bit    Registers := 1     
+	                4 Bit    Registers := 4     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	  11 Input     11 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 12    
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 5     
+	  11 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Top 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+Module clock 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
+Module LFSR_21bit 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               21 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module FSM 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	  11 Input     11 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 11    
+	  11 Input      1 Bit        Muxes := 2     
+Module counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 4     
++---Registers : 
+	                4 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module disp_hex_mux 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5545] ROM "init/max_tick_reg" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3917] design Top has port sseg[7] driven by constant 1
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 923.645 ; gain = 464.129
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 926.266 ; gain = 466.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 926.414 ; gain = 466.898
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 948.121 ; gain = 488.605
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 948.121 ; gain = 488.605
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 948.121 ; gain = 488.605
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 948.121 ; gain = 488.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 948.121 ; gain = 488.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 948.121 ; gain = 488.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 948.121 ; gain = 488.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |    29|
+|3     |LUT1   |     7|
+|4     |LUT2   |    20|
+|5     |LUT3   |    18|
+|6     |LUT4   |    18|
+|7     |LUT5   |    11|
+|8     |LUT6   |    13|
+|9     |FDCE   |    55|
+|10    |FDPE   |    11|
+|11    |FDRE   |    67|
+|12    |IBUF   |     3|
+|13    |OBUF   |    24|
++------+-------+------+
+
+Report Instance Areas: 
++------+-----------------+-------------+------+
+|      |Instance         |Module       |Cells |
++------+-----------------+-------------+------+
+|1     |top              |             |   278|
+|2     |  disp_unit      |disp_hex_mux |    28|
+|3     |  clk_signal     |clock        |    58|
+|4     |  detect_pattern |FSM          |    24|
+|5     |  init           |LFSR_21bit   |    87|
+|6     |  num_of_times   |counter      |    52|
++------+-----------------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 948.121 ; gain = 488.605
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 948.121 ; gain = 170.281
+Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 948.121 ; gain = 488.605
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 29 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 948.840 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+41 Infos, 25 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:22 . Memory (MB): peak = 948.840 ; gain = 501.461
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 948.840 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/UjjayantKadian/Vivado_Projects/assigment2/assigment2.runs/synth_1/Top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Top_utilization_synth.rpt -pb Top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 14 20:36:20 2023...
